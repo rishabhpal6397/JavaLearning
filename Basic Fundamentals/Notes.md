@@ -2,7 +2,13 @@
 
 2-> "Static": it means the method/variable belongs to the class so we can call it without creating an object
 
-3-> "Pass by value": For objects, what gets copied is the reference, so the method can change the object’s contents, but it can’t make the caller’s variable point to a different object.
+3-> "Pass by value": Java always passes arguments by value. For primitives, the method gets a copy of the value. For objects, the method gets a copy of the reference, which points to the same object as the caller’s variable.
+
+    **Java is always pass by value. There’s no “pass by reference” in Java.**
+    **String is immutable, so you can’t change its contents in a method at all. Only reassignment is possible, and it has no effect on the caller.**
+    **StringBuilder and most other objects are mutable, so methods can change them in place.**
+
+    For objects, what gets copied is the reference, so the method can change the object’s contents, but it can’t make the caller’s variable point to a different object.
         for e.g., public static void tryToChange(int x) {
             x = 100;   // changes only the local copy
         }
