@@ -37,3 +37,7 @@ for e.g.,public static int sum(int... numbers) {
 
 6-> "Recursion": A method can call itself, as long as there's a stopping condition. Without the base case, the method would keep calling itself forever until the program crashes with a StackOverflowError
 
+7-> As a rule, make fields private, make methods public only when other code needs them, and keep everything else as restricted as possible.
+    **Making fields private and providing methods to read or change them is called encapsulation.**
+
+8-> Getters and setters might look like extra code, but they give you control. You can add validation later without changing any code that uses the class. You can also make a field read-only by providing a getter but no setter.
