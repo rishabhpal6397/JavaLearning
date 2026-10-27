@@ -43,7 +43,7 @@ for e.g.,public static int sum(int... numbers) {
 8-> Getters and setters might look like extra code, but they give you control. You can add validation later without changing any code that uses the class. You can also make a field read-only by providing a getter but no setter.
 
 
-9-> Polymorphism means a parent-type variable can refer to any child object, and the correct method runs based on the actual object.
+9-> Polymorphism means "many forms", a parent-type variable can refer to any child object, and the correct method runs based on the actual object.
     The variable type controls which methods the compiler allows, and the object’s actual class controls which version runs.
     "This is called runtime polymorphism, achieved through method overriding and dynamic method dispatch. It allows you to write code using a common parent type while each subclass behaves differently."
 
