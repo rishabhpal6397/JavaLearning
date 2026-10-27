@@ -41,3 +41,21 @@ for e.g.,public static int sum(int... numbers) {
     **Making fields private and providing methods to read or change them is called encapsulation.**
 
 8-> Getters and setters might look like extra code, but they give you control. You can add validation later without changing any code that uses the class. You can also make a field read-only by providing a getter but no setter.
+
+
+9-> Polymorphism means a parent-type variable can refer to any child object, and the correct method runs based on the actual object.
+    The variable type controls which methods the compiler allows, and the object’s actual class controls which version runs.
+    "This is called runtime polymorphism, achieved through method overriding and dynamic method dispatch. It allows you to write code using a common parent type while each subclass behaves differently."
+
+10-> An abstract class can’t be instantiated. It’s a partial blueprint that forces children to provide certain methods.
+    - Can contain abstract methods (no body) and concrete methods (with implementation).
+    - Abstract method is declared without a body and the initialized in the sub-classes    where required
+    - Helps achieve security and cleaner design
+    - Focuses on what an object does, not how it does it
+
+
+11-> Variable Declaration types: 
+    - Local Variables: Declared within a method, constructor, or block, and are only accessible within that scope. They are created at the time of declaration and destroyed when the function completes
+    - Instance Variables: Declared within a class but outside any method, and are shared by all instances of that class. They have a default value of 0 or null depending on the data type.
+    - Static: A static member is loaded once when the class is loaded into memory. It is shared by all instances of the class. It can be accessed using the class name directly (e.g., ClassName.method()), without creating an object.
+    - Parameters: Declared in a method signature, and receive the value passed by the caller. They are local to the method and cannot be accessed outside of it.
