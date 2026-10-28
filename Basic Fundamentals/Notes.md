@@ -59,3 +59,7 @@ for e.g.,public static int sum(int... numbers) {
     - Instance Variables: Declared within a class but outside any method, and are shared by all instances of that class. They have a default value of 0 or null depending on the data type.
     - Static: A static member is loaded once when the class is loaded into memory. It is shared by all instances of the class. It can be accessed using the class name directly (e.g., ClassName.method()), without creating an object.
     - Parameters: Declared in a method signature, and receive the value passed by the caller. They are local to the method and cannot be accessed outside of it.
+
+
+12-> Interface: it defines a set of methods that a class must implement and they allows the classes to implement multi-inheritance i.e., a class can implement multiple interfaces
+    - static methods in interfaces belong to the interface and are called through its name
