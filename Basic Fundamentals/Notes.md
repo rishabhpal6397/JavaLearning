@@ -64,3 +64,6 @@ for e.g.,public static int sum(int... numbers) {
 12-> Interface: it defines a set of methods that a class must implement and they allows the classes to implement multi-inheritance i.e., a class can implement multiple interfaces
     - static methods in interfaces belong to the interface and are called through its name
     - Functional Interface: An interface with exactly one abstract method
+    - A class can extend only one class because Java keeps class inheritance straightforward and avoids ambiguity over inherited implementations. However, a class can implement several interfaces because it can support multiple independent capabilities at the same time
+    - Remember: one parent class, multiple interfaces
+    - the main reason is that if a class could extend two classes, it could inherit two conflicting implementations of the same method, or two different fields with the same name. Java calls this the “diamond problem.” Interfaces avoid it because they have no instance state, and when two default methods conflict, the implementing class must override the method and resolve the conflict itself.
