@@ -63,3 +63,4 @@ for e.g.,public static int sum(int... numbers) {
 
 12-> Interface: it defines a set of methods that a class must implement and they allows the classes to implement multi-inheritance i.e., a class can implement multiple interfaces
     - static methods in interfaces belong to the interface and are called through its name
+    - Functional Interface: An interface with exactly one abstract method
