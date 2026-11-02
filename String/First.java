@@ -4,11 +4,11 @@ public class First{
         System.out.println(isPalindrome(input));
     }
 
-    public static Boolean isPalindrome(String input){
+    public static boolean isPalindrome(String input){
         // int j =0;
         StringBuilder temp = new StringBuilder(input);
         
-            // for(int j = input.length() -1; j >= input.length(); j--){
+            // for(int j = input.length() -1; j <= input.length(); j--){
             //     if(input.charAt(i) == input.charAt(j)) return true;
             // } 1st Method
             // if(input.charAt(j)!=input.charAt(i)){
