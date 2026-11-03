@@ -1,4 +1,5 @@
 1-> "==": compares/checks the references or memory locations while ".equals()": is used for checking/comparing the contents of the string
+    - both variables point to the same pooled object. If either part were a variable instead of a literal, the result would be a new object and == would be false
 
 2-> "Static": it means the method/variable belongs to the class so we can call it without creating an object
 
