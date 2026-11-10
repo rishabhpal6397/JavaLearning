@@ -84,3 +84,13 @@
 
     - Type erasure
         Java removes generic type information at compile time. At runtime, List<String> and List<Integer> are both just List. This is why you can’t write new T() or check obj instanceof List<String>. It’s a backward-compatibility decision, and it’s a common interview topic.
+
+        - Generics exist only at compile time. Once the compiler has checked your types, it removes the angle-bracket information from the compiled bytecode. The JVM then sees only the raw types.
+        Your List<Integer> and List<Double> both become a plain List at runtime, and each element is just an Object.
+
+        That’s why the two lists behave the same at runtime, even though the compiler treats them as different types. Java adds the cast back automatically when you read an element. For example, Integer x = list.get(0) compiles to a cast from Object to Integer behind the scenes.
+
+        The reasons this design exists:
+            - Backward compatibility: Generics were added in Java 5. Old code that uses raw List still compiles and runs, because the same bytecode works with or without generics.
+            - Shared bytecode: Only one List class is needed in the JVM, not a separate copy for each type parameter.
+            - "Type erasure means the compiler removes generic type information after type checking, so List<String> and List<Integer> are the same List at runtime, which keeps old code compatible and avoids a separate class for each type.”
